@@ -9,7 +9,7 @@ export default function add() {
     const addUser = event => {
         event.preventDefault()
         fetch(
-            'http://localhost:3000/api/users/add',
+            'https://nextjs-server-side.vercel.app/api/users/add',
             { method: 'POST', body: JSON.stringify({ name: 'nombre', lastName: 'sd', email: 's@gmail.com' }) })
             .then(r => r.json())
             .then(r => setSuccessfully(r.status))
