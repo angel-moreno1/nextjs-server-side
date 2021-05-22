@@ -15,7 +15,7 @@ export default function users({ users }) {
 
 
 export async function getServerSideProps(ctx) {
-    const response = await fetch('http://localhost:3000/api/users')
+    const response = await fetch('https://nextjs-server-side.vercel.app/api/users')
     const data = await response.json()
   
     return {
